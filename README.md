@@ -1,40 +1,90 @@
-# Welcome to Remix!
+Here’s a simple but solid README.md for your project based on your current stack and team workflow needs:
 
-- 📖 [Remix docs](https://remix.run/docs)
+# 🧠 CodeMax – Competitive Programming Game
 
-## Development
+CodeMax is a clean, fast-paced competitive programming platform where players face off in real-time 1v1, 2v2, or larger team matches. Players solve problems of varying difficulty, earn points, and climb the leaderboard.
 
-Run the dev server:
+---
 
-```shellscript
-npm run dev
+## ⚙️ Tech Stack
+
+| Layer         | Tech                                                        |
+| ------------- | ----------------------------------------------------------- |
+| **UI**        | React                                                       |
+| **Fullstack** | [Remix](https://remix.run/)                                 |
+| **Styling**   | Tailwind CSS, React Bootstrap                               |
+| **Editor**    | [Monaco Editor](https://microsoft.github.io/monaco-editor/) |
+| **Code Exec** | Python + [Judge0 API](https://judge0.com/)                  |
+| **Auth**      | Supabase (or fallback: JWT)                                 |
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the repo
+
+```bash
+git clone https://github.com/your-org/codemax.git
+cd codemax
+
+2. Install dependencies
+
+npm install
+
+3. Set up environment variables
+
+Create a .env file in the root:
+
+SUPABASE_URL=your_supabase_url
+SUPABASE_ANON_KEY=your_anon_key
+JUDGE0_API=https://your-judge0-endpoint.com
+
+	🔐 Do not commit .env — it is listed in .gitignore.
+
+🛠 Dev Commands
+
+npm run dev        # Start Remix dev server
+npm run build      # Build for production
+npm run start      # Start production server
+
+🌳 Branching & Commit Rules
+
+📦 Branch Naming
+
+Type	Format	Example
+Feature	feature/<short-desc>	feature/matchmaking
+Bug Fix	fix/<issue-desc>	fix/timer-bug
+Refactor	refactor/<desc>	refactor/editor-wrapper
+UI Changes	ui/<page-name>	ui/homepage-layout
+
+✅ Commit Guidelines
+	•	Use clear, present-tense messages:
+
+Add bonus round logic to match handler
+Fix incorrect point calculation for hard problems
+Refactor code editor layout and styling
+
+
+	•	Group changes logically: avoid mixing unrelated changes.
+
+📌 Coming Soon
+	•	Bonus round mechanics
+	•	Player profiles and unlockables
+	•	Leaderboards & XP system
+	•	Tournament mode
+	•	In-game chat
+
+🤝 Contributing
+	1.	Create a feature branch.
+	2.	Make changes with clean commits.
+	3.	Submit a PR with a clear description.
+	4.	Tag teammates for review.
+
+📄 License
+
+MIT
+
+---
+
+Let me know if you want the README to include deployment setup (e.g. Fly.io, Vercel, or Docker), Supabase schema instructions, or a contribution template.
 ```
-
-## Deployment
-
-First, build your app for production:
-
-```sh
-npm run build
-```
-
-Then run the app in production mode:
-
-```sh
-npm start
-```
-
-Now you'll need to pick a host to deploy it to.
-
-### DIY
-
-If you're familiar with deploying Node applications, the built-in Remix app server is production-ready.
-
-Make sure to deploy the output of `npm run build`
-
-- `build/server`
-- `build/client`
-
-## Styling
-
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever css framework you prefer. See the [Vite docs on css](https://vitejs.dev/guide/features.html#css) for more information.
