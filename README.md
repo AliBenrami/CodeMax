@@ -99,5 +99,6 @@ npm run start      # Start production server
 ---
 
 ## 📄 License
-
 MIT
+
+---
